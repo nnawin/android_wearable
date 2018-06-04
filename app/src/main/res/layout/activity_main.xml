@@ -10,6 +10,90 @@
     tools:context="com.tcs.hkia.baggagenotify.MainActivity"
     tools:deviceIds="wear">
 
+    <RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:tools = "http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height = "match_parent"
+        tools:context = ".MainActivity">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="🔎 Track Bag 💼‍" />
+
+        <!--android:textSize = "35dp" />-->
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textview"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="16dp"
+            android:focusable="true"
+            android:hint="Enter Name"
+            android:textColorHighlight="#ff7eff15"
+            android:textColorHint="#ffff25e6" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_below="@+id/textview"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:src="@drawable/ic_launcher" />-->
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText"
+            android:layout_alignRight="@+id/editText"
+            android:layout_alignStart="@+id/editText"
+            android:layout_below="@+id/editText"
+            android:ems="5"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#ffff299f" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_below="@+id/editText2"
+            android:text="Attempts Left:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toEndOf="@+id/textview"
+
+            android:layout_toRightOf="@+id/textview" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="login"
+            android:textSize="10dp" />
+
+
+    </RelativeLayout>
 
 </android.support.wear.widget.BoxInsetLayout>
 

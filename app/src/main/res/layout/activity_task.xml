@@ -6,37 +6,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_grey"
-    android:padding="@dimen/box_inset_layout_padding"
+    android:padding="10dp"
     tools:context="com.tcs.hkia.baggagenotify.TaskActivity"
     tools:deviceIds="wear">
 
-    <LinearLayout
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:rowCount="4"
+        android:columnCount="2"
         android:orientation="vertical"
         app:boxedEdges="all">
-
-        <ImageView
-            android:id="@+id/task_icon"
-            android:layout_gravity="left"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
 
 
         <TextView
             android:labelFor="@id/taskDescription"
             android:id="@+id/taskName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:text="task heading"
+            android:textAllCaps="true"
+           />
 
 
         <TextView
             android:id="@+id/taskDescription"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:text="task description"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            />
 
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/yesButton"
+            android:src="@drawable/yes"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:onClick="taskComplete"/>
 
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/noButton"
+            android:src="@drawable/no"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_gravity="right"
+            android:onClick="taskDeclined"/>
 
-    </LinearLayout>
+    </GridLayout>
 </android.support.wear.widget.BoxInsetLayout>
 
