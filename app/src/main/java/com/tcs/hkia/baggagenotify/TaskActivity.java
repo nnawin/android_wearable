@@ -1,9 +1,12 @@
 package com.tcs.hkia.baggagenotify;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.wearable.activity.WearableActivity;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class TaskActivity extends WearableActivity {
 
@@ -27,5 +30,19 @@ public class TaskActivity extends WearableActivity {
         //get drink description
         TextView taskDesc = (TextView) findViewById(R.id.taskDescription);
         taskDesc.setText(task.getTaskDescription());
+
     }
+
+    public void taskComplete(View view) {
+        Toast.makeText(this, "Task completed", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(TaskActivity.this,MyListActivity.class);
+        startActivity(intent);
+    }
+
+    public void taskDeclined(View view) {
+        Toast.makeText(this, "Task Cancelled", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(TaskActivity.this,MyListActivity.class);
+        startActivity(intent);
+    }
+
 }

@@ -6,4 +6,10 @@
     -->
     <string name="hello_world">Baggage staff notification</string>
     <string name="title_activity_task">TaskActivity</string>
+    <string name="yes_button">Completed</string>
+    <string name="no_button">Cancelled</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="offload_main_text">Please confirm the bag tag number :</string>
+    <string name="bag_tag_hint">Enter Bag Tag Number:</string>
+
 </resources>
