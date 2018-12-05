@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape"
+    android:padding="@dimen/diag_content_top_padding_round"
+    tools:context="com.tcs.hkia.baggagenotify.HomeActivity"
+    tools:deviceIds="wear">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Welcome User !"
+
+            android:textAppearance="@android:style/TextAppearance.WindowTitle" />
+
+        <TextView
+            android:id="@+id/optionText"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="bottom"
+            android:text="Choose your task....."
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/light_grey" />
+
+        <Button
+            android:id="@+id/carousel_task_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="horizontal|vertical"
+            android:onClick="carousel_task"
+            android:paddingTop="15dp"
+            android:text="Carousel Tasks"
+            android:backgroundTint="@color/semitransparent_grey"/>
+
+        <Button
+            android:id="@+id/offload_task_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="offload_task"
+            android:paddingTop="15dp"
+            android:text="Offload Tasks"
+            android:backgroundTint="@color/semitransparent_grey"/>
+
+    </LinearLayout>
+</android.support.wear.widget.BoxInsetLayout>
+

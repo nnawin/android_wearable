@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 /**
  * Created by navinn on 01/06/2018.
  */
@@ -30,14 +31,12 @@ public class MySimpleArrayAdapter extends ArrayAdapter<String> {
             textView.setText(values[position]);
             // Change the icon for Windows and iPhone
             String s = values[position];
-            if (s.startsWith("Baggage task 8") || s.startsWith("Baggage task 5")
-                    || s.startsWith("Baggage task 10")) {
+            if (s.startsWith("Carousel task 8") || s.startsWith("Carousel task 5")
+                    || s.startsWith("Carousel task 10")) {
                 imageView.setImageResource(R.drawable.no);
             } else {
                 imageView.setImageResource(R.drawable.yes);
-            }
-
-            return rowView;
+            }return rowView;
         }
     }
 

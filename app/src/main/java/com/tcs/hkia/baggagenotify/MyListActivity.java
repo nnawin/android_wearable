@@ -21,9 +21,9 @@ public class MyListActivity extends ListActivity {
 
         super.onCreate(icicle);
 
-        String[] values = new String[] {"Baggage task 1", "Baggage task 2", "Baggage task 3",
-                "Baggage task 4", "Baggage task 5", "Baggage task 6", "Baggage task 7", "Baggage task 8",
-                "Baggage task 9", "Baggage task 10"};
+        String[] values = new String[] {"Carousel task 1", "Carousel task 2", "Carousel task 3",
+                "Carousel task 4", "Carousel task 5", "Carousel task 6", "Carousel task 7", "Carousel task 8",
+                "Carousel task 9", "Carousel task 10"};
 
         MySimpleArrayAdapter adapter = new MySimpleArrayAdapter(this, values);
         setListAdapter(adapter);

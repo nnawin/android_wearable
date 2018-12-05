@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_grey"
+    android:background="@drawable/shape"
     android:padding="@dimen/box_inset_layout_padding"
     tools:context="com.tcs.hkia.baggagenotify.MainActivity"
     tools:deviceIds="wear">
@@ -22,7 +22,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="17dp"
-            android:text="🔎 Track Bag 💼‍" />
+            android:text="Baggage Notifier ‍" />
 
         <!--android:textSize = "35dp" />-->
 
@@ -39,7 +39,7 @@
             android:focusable="true"
             android:hint="Enter Name"
             android:textColorHighlight="#ff7eff15"
-            android:textColorHint="#ffff25e6" />
+            android:textColorHint="@color/light_grey" />
 
         <!--<ImageView-->
             <!--android:id="@+id/imageView"-->
@@ -60,7 +60,7 @@
             android:ems="5"
             android:hint="Password"
             android:inputType="textPassword"
-            android:textColorHint="#ffff299f" />
+            android:textColorHint="@color/light_grey" />
 
         <TextView
             android:id="@+id/textView2"
@@ -90,7 +90,9 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:text="login"
-            android:textSize="10dp" />
+            android:textSize="10dp"
+            android:backgroundTint="@color/semitransparent_grey"
+            android:fadingEdge="vertical"/>
 
 
     </RelativeLayout>

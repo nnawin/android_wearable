@@ -21,6 +21,8 @@ public class MainActivity extends Activity {
     TextView tx1;
     int counter = 3;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +43,7 @@ public class MainActivity extends Activity {
                         ed2.getText().toString().equals("admin")) {
                     Toast.makeText(getApplicationContext(),
                             "Redirecting...",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this,MyListActivity.class);
+                    Intent intent = new Intent(MainActivity.this,HomeActivity.class);
                     startActivity(intent);
 
                 }else{
